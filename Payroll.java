@@ -25,9 +25,12 @@ class Employees
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Enter the number of employees: ");
 		NoOfEmps = sc.nextInt();
+		for(int i = 0; i<NoOfEmps; i++)
+		{
 		Employee obj1 = new Employee();
 		obj1.empName();
 		obj1.empWage();
+		}
 	}
 }
 class TimeCard
@@ -38,8 +41,11 @@ class TimeCard
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Enter the number of time cards: ");
 		NoOfTCs = sc.nextInt();
-		
-		
+		for(int j = 0; j<NoOfTCs; j++) {
+			System.out.println("Enter the employee name and the number of minutes worked: ");
+			String EmpName = sc.next();
+			NoOfMinsWorked = sc.nextInt();
+		}
 		
 	}
 }
