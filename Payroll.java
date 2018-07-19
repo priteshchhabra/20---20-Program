@@ -41,13 +41,21 @@ class TimeCard
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Enter the number of time cards: ");
 		NoOfTCs = sc.nextInt();
-		for(int j = 0; j<NoOfTCs; j++) {
+		for(int j = 0; j<NoOfTCs; j++)
+		{
 			System.out.println("Enter the employee name and the number of minutes worked: ");
 			String EmpName = sc.next();
 			NoOfMinsWorked = sc.nextInt();
 		}
+	}
+	
+	public void compute() 
+	{
 		
 	}
+}
+class output{
+	
 }
 public class Payroll
 {
@@ -60,5 +68,4 @@ public class Payroll
 		obj3.timeCard();
 		
 	}
-
 }
